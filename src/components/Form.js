@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import styles from './Form.module.css'
 
 class Form extends Component {
     constructor(props) {
@@ -31,9 +32,9 @@ class Form extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="flexbox">
                 <form onSubmit={this.handleSubmit}>
-                    <div>
+                    <div className={styles.flexbox}>
                         <label>Username</label>
                         <input 
                             type="text" 
